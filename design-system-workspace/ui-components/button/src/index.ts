@@ -1,1 +1,0 @@
-export { BUTTON_COMPONENT, COMPONENTS, ButtonHostComponent } from './lib/button/button.token';
