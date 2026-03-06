@@ -1,12 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcome } from './nx-welcome';
-import { BUTTON_COMPONENT, ButtonHostComponent } from '@dso/ui-components/button';
 import { CommonModule } from '@angular/common';
+import { Button, BUTTON_TOKEN, Highlighter, MButton } from '@methrax/ui';
 
 @Component({
   standalone: true, // required for inject()
-  imports: [NxWelcome, RouterModule, CommonModule, ButtonHostComponent],
+  imports: [RouterModule, CommonModule, Button, Highlighter],
   selector: 'dso-root',
   templateUrl: './app.html',
   styleUrls: ['./app.scss'], // correct property
